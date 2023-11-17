@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: hsl(30, 38%, 92%);
+    margin: auto;
+    width: 600px;
+    color: hsl(228, 12%, 48%);
+    padding-top: 25px;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    color: hsl(212, 21%, 14%);
+}
+.price{
+    font-family: 'Fraunces', serif; 
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+}
+.float{
+    padding-left: 8px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    
+}
+.mobile{
+    display: none;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.main-div{
+    display: flex;
+}
+.img,
+.content{
+    width: 300px; 
+}
+.main-img{
+    width: 300px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    display: block;
+}
+p{
+    font-size: 15px;
+}
+.content{
+    padding: 10px 30px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: hsl(0, 0%, 100%);
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+h4{
+    background:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: smaller;
+}
+.cart{
+    margin-right: 11px;
+}
+h4:hover{
+    background: hsl(157, 95%, 9%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+      width: 100%;
+      padding: 20px;
+    }
+    .main-div{
+        display: block;
+    }
+    .img,
+    .content{
+    width:84%;
+    }
+    .mobile{
+        display: block;
+        width: 119%;
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+    }
+    .main-img{
+       display: none; 
+    }
+    .content{
+        border-bottom-left-radius: 13px;
+        border-top-right-radius: 0px;
+    }
+}
